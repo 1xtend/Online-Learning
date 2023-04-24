@@ -37,7 +37,7 @@ body {
 
 [class*='__container'] {
   max-width: rem(1182);
-  padding: 0 15px;
+  padding: 0 rem(15);
   margin: 0 auto;
 }
 
@@ -45,6 +45,8 @@ body {
 @import 'common.scss';
 
 /*===============SECTIONS===============*/
+
+@import 'hero.scss';
 
 /*===============Header===============*/
 @import 'header.scss';
