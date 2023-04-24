@@ -59,18 +59,14 @@
 /*===============Other===============*/
 
 .header {
-  padding: rem(40) 0;
-
   background-color: var(--color-light);
+  padding: rem(25) 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: rem(15) 0;
 
-  @media (max-width: 991.98px) {
-    padding: rem(25) 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: rem(15) 0;
-  }
   @media (max-width: 767.98px) {
     padding: rem(10) 0;
   }
@@ -81,8 +77,6 @@
     align-items: center;
   }
 
-  &__container {
-  }
   &__logo {
     margin-right: rem(20);
     z-index: 3;
@@ -109,8 +103,6 @@
 
   &__burger {
     margin-left: auto;
-  }
-  &__nav {
   }
 }
 
@@ -171,7 +163,7 @@
     font-weight: var(--fw-regular);
     font-size: rem(16);
     line-height: lh(25, 16);
-    color: var(--color-primary);
+    color: inherit;
     transition: color 0.2s ease-in-out;
 
     @media (max-width: 767.98px) {
@@ -191,12 +183,6 @@
     }
     @media (max-width: 767.98px) {
       margin-left: 0;
-      // flex-direction: column;
-      // align-items: flex-start;
     }
-  }
-  &__sign-in {
-  }
-  &__sign-up {
   }
 }

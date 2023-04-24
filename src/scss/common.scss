@@ -171,7 +171,7 @@ body.touch .dropdown.show-dropdown .dropdown__list {
   font-weight: var(--fw-bold);
   font-size: rem(24);
   line-height: lh(31, 24);
-  color: var(--color-primary);
+  color: inherit;
 }
 
 .primary-btn {
