@@ -1,9 +1,12 @@
 .offer {
   margin-top: rem(-95);
-  padding-bottom: 100px;
+  padding-bottom: rem(64);
 
   @media (max-width: 991.98px) {
     margin-top: rem(-75);
+  }
+  @media (max-width: 767.98px) {
+    padding-bottom: rem(32);
   }
   @media (max-width: 479.98px) {
     margin-top: rem(-35);
