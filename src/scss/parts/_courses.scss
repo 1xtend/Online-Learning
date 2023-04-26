@@ -25,9 +25,22 @@
 
     grid-template-columns: repeat(auto-fit, minmax(rem(300), 1fr));
 
+    &:not(:last-child) {
+      margin-bottom: rem(48);
+
+      @media (max-width: 767.98px) {
+        margin-bottom: rem(24);
+      }
+    }
+
     @media (max-width: 767.98px) {
       gap: rem(20);
     }
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
