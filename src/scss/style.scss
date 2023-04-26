@@ -1,17 +1,14 @@
-/*===Fonts===*/
-// @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
 /*===SCSS Functions===*/
-@import 'functions.scss';
+@import './dev/functions.scss';
 
 /*===Reset Styles===*/
-@import 'nullstyle.scss';
+@import './dev/nullstyle.scss';
 
 /*===Vars===*/
-@import 'vars.scss';
+@import './dev/vars.scss';
 
 /*===Swiper===*/
-// @import './swiper-bundle.min.scss';
+// @import './dev/swiper-bundle.min.scss';
 
 /*===============GLOBAL STYLES===============*/
 
@@ -43,22 +40,22 @@ body {
 }
 
 /*===BEM Blocks===*/
-@import 'common.scss';
+@import './dev/common.scss';
+
+/*===============Header===============*/
+@import './parts/header.scss';
 
 /*===============SECTIONS===============*/
 
-@import 'hero.scss';
+@import './parts/hero.scss';
 
-@import 'offer.scss';
+@import './parts/offer.scss';
 
-@import 'future.scss';
+@import './parts/future.scss';
 
-@import 'work.scss';
+@import './parts/work.scss';
 
-@import 'courses.scss';
-
-/*===============Header===============*/
-@import 'header.scss';
+@import './parts/courses.scss';
 
 /*===============Footer===============*/
-@import 'footer.scss';
+@import './parts/footer.scss';
