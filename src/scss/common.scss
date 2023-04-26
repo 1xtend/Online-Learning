@@ -239,11 +239,6 @@ body.touch .dropdown.show-dropdown .dropdown__list {
     }
   }
   &__text {
-    font-size: rem(16);
-    line-height: lh(25, 16);
-    font-weight: var(--fw-regular);
-    color: var(--color-secondary);
-
     &:not(:last-child) {
       margin-bottom: em(16, 16);
 
@@ -255,9 +250,38 @@ body.touch .dropdown.show-dropdown .dropdown__list {
     & > p:not(:last-child) {
       margin-bottom: em(15, 16);
     }
-
-    @media (max-width: 479.98px) {
-      font-size: rem(14);
-    }
   }
+}
+
+.small-title {
+  font-weight: var(--fw-bold);
+  font-size: rem(24);
+  line-height: lh(31, 24);
+  color: var(--color-primary);
+
+  &_light {
+    color: var(--color-secondary-darker);
+  }
+}
+
+.primary-text {
+  font-size: rem(16);
+  line-height: lh(25, 16);
+  font-weight: var(--fw-regular);
+  color: var(--color-secondary);
+
+  @media (max-width: 479.98px) {
+    font-size: rem(14);
+  }
+
+  &_white {
+    color: var(--color-light);
+  }
+}
+
+.secondary-text {
+  font-weight: var(--fw-regular);
+  font-size: rem(14);
+  line-height: lh(22, 14);
+  color: var(--color-secondary);
 }

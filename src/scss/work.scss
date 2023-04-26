@@ -58,21 +58,11 @@
     }
   }
   &__title {
-    font-size: rem(24);
-    line-height: lh(31, 24);
-    color: var(--color-primary);
-    font-weight: var(--fw-bold);
-
     &:not(:last-child) {
       margin-bottom: rem(16);
     }
   }
   &__text {
-    font-size: rem(14);
-    line-height: lh(22, 14);
-    color: var(--color-secondary);
-    font-weight: var(--fw-regular);
-
     & > p:not(:last-child) {
       margin-bottom: rem(5);
     }
