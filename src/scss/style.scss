@@ -8,7 +8,7 @@
 @import './dev/vars.scss';
 
 /*===Swiper===*/
-// @import './dev/swiper-bundle.min.scss';
+@import './dev/swiper-bundle.min.scss';
 
 /*===============GLOBAL STYLES===============*/
 
@@ -64,6 +64,8 @@ body {
 @import './parts/result.scss';
 
 @import './parts/blog.scss';
+
+@import './parts/reviews.scss';
 
 /*===============Footer===============*/
 @import './parts/footer.scss';

@@ -1,11 +1,11 @@
 import './swiper-bundle.min.js';
 
-export const swiper = new Swiper('.swiper', {
-  loop: true,
+export const swiper = new Swiper('.swiper-reviews', {
+  // loop: true,
   autoHeight: true,
   slidesPerView: 1,
   // slidesPerView: 'auto',
-  // spaceBetween: 30,
+  spaceBetween: 24,
   // centeredSlides: true,
   // freeMode: true,
   // mousewheel: true,
@@ -23,27 +23,9 @@ export const swiper = new Swiper('.swiper', {
   //   rows: 2,
   // },
 
-  pagination: {
-    el: '.swiper-pagination',
-
-    // Is clickable
-    clickable: true,
-
-    // Animation
-    // dynamicBullets: true,
-
-    // Numbers
-    // type: 'fraction',
-
-    // Custom bullet with number
-    // renderBullet: function (index, className) {
-    //   return '<span class="' + className + '">' + (index + 1) + "</span>";
-    // },
-  },
-
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-reviews__btn_next',
+    prevEl: '.swiper-reviews__btn_prev',
   },
 
   scrollbar: {
@@ -51,10 +33,14 @@ export const swiper = new Swiper('.swiper', {
     hide: true,
   },
 
-  // breakpoints: {
-  //   767: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  // },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    650: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+  },
 });

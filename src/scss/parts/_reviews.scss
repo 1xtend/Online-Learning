@@ -1,0 +1,115 @@
+.reviews {
+  padding: rem(64) 0 rem(12);
+
+  @media (max-width: 767.98px) {
+    padding: rem(32) 0 rem(12);
+  }
+
+  &__block {
+    max-width: rem(543);
+    margin: 0 auto;
+  }
+  &__content {
+    position: relative;
+  }
+}
+
+.swiper-reviews {
+  max-width: rem(1000);
+  margin: 0 auto;
+  padding: rem(48) 0;
+  overflow-y: visible;
+
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(40);
+    height: rem(40);
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    border: rem(1) solid var(--color-accent);
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--color-accent-hover);
+        border-color: var(--color-accent-hover);
+      }
+    }
+
+    &:active {
+      background-color: var(--color-accent-active);
+      border-color: var(--color-accent-active);
+    }
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+
+    svg {
+      width: rem(14);
+      height: rem(8);
+      fill: var(--color-light);
+    }
+
+    &.swiper-button-disabled {
+      background-color: var(--color-light);
+      border: rem(1) solid var(--border-color-gray);
+
+      svg {
+        fill: var(--border-color-gray);
+      }
+    }
+
+    &_prev {
+      left: 0;
+
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+    &_next {
+      right: 0;
+
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  box-shadow: 0px rem(13) rem(20) rgba(0, 0, 0, 0.08);
+  border-radius: rem(6);
+  overflow: hidden;
+  padding: rem(30) rem(15);
+
+  &__text {
+    & > p:not(:last-child) {
+      margin-bottom: rem(10);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+  }
+  &__image {
+    max-width: rem(72);
+    max-height: rem(72);
+  }
+  &__content {
+    & > *:not(:last-child) {
+      margin-bottom: rem(8);
+    }
+  }
+}
