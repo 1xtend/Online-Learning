@@ -215,6 +215,13 @@ body.touch .dropdown.show-dropdown .dropdown__list {
   &_left {
     text-align: left;
   }
+  &_white &__title {
+    font-size: rem(36);
+  }
+  &_white &__title,
+  &_white &__text {
+    color: var(--color-light);
+  }
   &__title {
     font-size: rem(48);
     line-height: lh(62, 48);

@@ -57,9 +57,10 @@
       fill: var(--color-light);
     }
 
-    &.swiper-button-disabled {
+    &:disabled {
       background-color: var(--color-light);
       border: rem(1) solid var(--border-color-gray);
+      cursor: default;
 
       svg {
         fill: var(--border-color-gray);

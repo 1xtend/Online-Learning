@@ -1,0 +1,96 @@
+.students {
+  padding: rem(64) 0;
+
+  @media (max-width: 767.98px) {
+    padding: rem(32) 0;
+  }
+
+  &__body {
+    background-color: var(--color-accent);
+    max-width: rem(940);
+    margin: 0 auto;
+    padding: rem(48) rem(15) rem(64);
+
+    @media (min-width: 768px) {
+      border-radius: rem(6);
+    }
+
+    @media (max-width: 767.98px) {
+      margin: 0 rem(-15);
+      padding: rem(32) rem(15);
+    }
+  }
+  &__block {
+    max-width: rem(491);
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: rem(48);
+
+      @media (max-width: 767.98px) {
+        margin-bottom: rem(24);
+      }
+    }
+  }
+}
+
+.form-students {
+  max-width: rem(538);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 479.98px) {
+    flex-direction: column;
+  }
+
+  &__input {
+    flex: 1 0 100%;
+    min-height: rem(64);
+    border-radius: rem(4);
+    background-color: var(--color-light);
+    padding: rem(8) rem(140) rem(8) rem(24);
+
+    font-size: rem(14);
+    line-height: lh(22, 14);
+    font-weight: var(--fw-regular);
+    color: var(--color-primary);
+
+    @media (max-width: 479.98px) {
+      padding: rem(8);
+      width: 100%;
+      min-height: rem(48);
+
+      &:not(:last-child) {
+        margin-bottom: rem(8);
+      }
+    }
+
+    &::placeholder {
+      color: var(--color-secondary);
+    }
+  }
+  &__btn {
+    @media (max-width: 479.98px) {
+      background-color: var(--color-light);
+      color: var(--color-accent);
+      width: 100%;
+
+      @media (any-hover: hover) {
+        &:hover {
+          background-color: var(--border-color-gray-light);
+        }
+      }
+
+      &:active {
+        background-color: var(--border-color-gray);
+      }
+    }
+
+    @media (min-width: 480px) {
+      position: absolute;
+      right: rem(8);
+    }
+  }
+}
