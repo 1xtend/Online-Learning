@@ -1,0 +1,39 @@
+.result {
+  background-color: var(--bg-color-blue);
+  padding: rem(72) 0;
+
+  @media (max-width: 991.98px) {
+    padding: rem(52) 0;
+  }
+  @media (max-width: 767.98px) {
+    padding: rem(36) 0;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    max-width: rem(867);
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    gap: rem(15);
+  }
+  &__col {
+    text-align: center;
+    flex: 1 0 rem(125);
+  }
+  &__num {
+    font-size: rem(48);
+    line-height: lh(62, 48);
+    font-weight: var(--fw-bold);
+    color: var(--color-primary);
+
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: rem(36);
+    }
+  }
+}
