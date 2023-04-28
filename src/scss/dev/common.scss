@@ -264,6 +264,13 @@ body.touch .dropdown.show-dropdown .dropdown__list {
   }
 }
 
+.primary-title {
+  font-weight: var(--fw-medium);
+  font-size: rem(20);
+  line-height: lh(26, 20);
+  color: var(--color-primary);
+}
+
 .primary-text {
   font-size: rem(16);
   line-height: lh(25, 16);
