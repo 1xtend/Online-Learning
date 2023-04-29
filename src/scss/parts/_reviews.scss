@@ -18,7 +18,10 @@
   max-width: rem(1000);
   margin: 0 auto;
   padding: rem(48) 0;
-  overflow-y: visible;
+
+  @media (max-width: 991.98px) {
+    overflow: visible;
+  }
 
   &__btn {
     display: inline-flex;
@@ -85,7 +88,7 @@
 }
 
 .swiper-slide {
-  box-shadow: 0px rem(13) rem(20) rgba(0, 0, 0, 0.08);
+  box-shadow: 0px rem(13) rem(48) rgba(0, 0, 0, 0.08);
   border-radius: rem(6);
   overflow: hidden;
   padding: rem(30) rem(15);
