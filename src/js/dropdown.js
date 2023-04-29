@@ -40,6 +40,8 @@ export const dropdown = () => {
 
   function touchDropdown() {
     const dropdowns = document.querySelectorAll('.dropdown');
+    let activeDropdown;
+    let activeDropdownList;
 
     if (dropdowns.length > 0) {
       dropdowns.forEach((dropdown) => {
@@ -58,14 +60,30 @@ export const dropdown = () => {
     }
 
     function toggleDropdown(dropdown) {
-      const dropdownList = dropdown.querySelector('.dropdown__list');
+      activeDropdownList = dropdown.querySelector('.dropdown__list');
 
       if (dropdown.classList.contains('show-dropdown')) {
-        dropdownList.removeAttribute('style');
+        activeDropdownList.removeAttribute('style');
         dropdown.classList.remove('show-dropdown');
+
+        window.removeEventListener('click', windowClose);
+
+        activeDropdown = null;
       } else {
-        dropdownList.style.height = dropdownList.scrollHeight + 'px';
+        activeDropdownList.style.height = activeDropdownList.scrollHeight + 'px';
         dropdown.classList.add('show-dropdown');
+
+        activeDropdown = document.querySelector('.show-dropdown');
+
+        window.addEventListener('click', windowClose);
+      }
+    }
+
+    function windowClose(e) {
+      if (!e.target.closest('.dropdown-arrow')) {
+        activeDropdown.classList.remove('show-dropdown');
+        activeDropdownList.removeAttribute('style');
+        window.removeEventListener('click', windowClose);
       }
     }
   }
