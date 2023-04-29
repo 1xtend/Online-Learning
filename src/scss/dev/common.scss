@@ -126,7 +126,6 @@ body.touch .dropdown.show-dropdown .dropdown__list {
   top: rem(18);
   left: 0;
   padding-top: rem(15);
-
   opacity: 0;
   height: 0;
   overflow: hidden;
@@ -145,6 +144,10 @@ body.touch .dropdown.show-dropdown .dropdown__list {
     background-color: var(--bg-color-blue-light);
     transition: background-color 0.2s ease-in-out;
 
+    &:not(:last-child) {
+      border-bottom: rem(1) solid var(--color-accent);
+    }
+
     @media (any-hover: hover) {
       &:hover {
         background-color: var(--bg-color-blue);
@@ -159,6 +162,7 @@ body.touch .dropdown.show-dropdown .dropdown__list {
     display: block;
     color: #fff;
     padding: rem(5) rem(60) rem(5) rem(10);
+    white-space: nowrap;
 
     @media (max-width: 767.98px) {
       padding: rem(5) rem(10);
