@@ -31,7 +31,7 @@
     border: rem(1) solid var(--color-accent);
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     position: absolute;
-    z-index: 100;
+    z-index: 30;
     top: 50%;
     transform: translateY(-50%);
 
@@ -105,8 +105,10 @@
     gap: rem(16);
   }
   &__image {
-    max-width: rem(72);
-    max-height: rem(72);
+    img {
+      width: rem(72);
+      height: rem(72);
+    }
   }
   &__content {
     & > *:not(:last-child) {

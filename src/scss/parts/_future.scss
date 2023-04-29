@@ -66,74 +66,22 @@
 
 .video-future {
   &__box {
-    width: 100%;
     position: relative;
     padding-bottom: 75%;
     border-radius: rem(4);
     overflow: hidden;
 
-    &:hover {
-      cursor: pointer;
-      background-color: #fff;
-    }
-
-    &:hover .video-future__play-btn {
-      background-color: var(--bg-color-blue-light);
-    }
-    &:active .video-future__play-btn {
-      background-color: var(--bg-color-blue);
+    @media (max-width: 767.98px) {
+      padding-bottom: 55%;
     }
   }
 
   &__video {
-    display: none;
-
-    &.show-video {
-      display: inline-block;
-    }
-  }
-
-  .video-future__img,
-  .video-future__video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  &__img.hide {
-    display: none;
-  }
-
-  &__play-btn {
-    position: absolute;
-
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: rem(28);
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-light);
-    transition: background-color 0.2s ease-in-out;
-
-    @media (max-width: 767.98px) {
-      padding: rem(16);
-    }
-
-    &.hide {
-      display: none;
-    }
-
-    svg {
-      fill: var(--color-accent);
-      width: rem(22);
-      height: rem(24);
-    }
   }
 }
