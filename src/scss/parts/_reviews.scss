@@ -38,6 +38,17 @@
     top: 50%;
     transform: translateY(-50%);
 
+    &:disabled {
+      background-color: var(--color-light);
+      border: rem(1) solid var(--border-color-gray);
+      cursor: default;
+      pointer-events: none;
+
+      svg {
+        fill: var(--border-color-gray);
+      }
+    }
+
     @media (any-hover: hover) {
       &:hover {
         background-color: var(--color-accent-hover);
@@ -58,16 +69,6 @@
       width: rem(14);
       height: rem(8);
       fill: var(--color-light);
-    }
-
-    &:disabled {
-      background-color: var(--color-light);
-      border: rem(1) solid var(--border-color-gray);
-      cursor: default;
-
-      svg {
-        fill: var(--border-color-gray);
-      }
     }
 
     &_prev {
