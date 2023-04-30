@@ -1,6 +1,8 @@
-import './swiper-bundle.min.js';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
 export const swiper = new Swiper('.swiper-reviews', {
+  modules: [Navigation, Pagination],
+
   // loop: true,
   autoHeight: true,
   slidesPerView: 1,
